@@ -1,9 +1,11 @@
-﻿int GetSecondDigit(int number)
+﻿int GetSecondDigit(int num)
 {
-    int result = (number % 100) / 10;
+    int result = (num % 100) / 10;
     return result;
 }
 
-int secondDigit = GetSecondDigit(456);
+Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int secondDigit = GetSecondDigit(number);
 Console.WriteLine(secondDigit);
 
