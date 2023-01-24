@@ -6,6 +6,10 @@ Console.WriteLine($"Сумма цифр числа равна: {sum}");
 
 int SumDigits(int number)
 {
+    if(number < 0)
+    {
+        number *= -1;
+    }
     int sum = 0;
     while(number > 0)
     {
